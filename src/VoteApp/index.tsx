@@ -8,7 +8,7 @@ const panelStyles = 'bg-white rounded-xl shadow-lg mx-6 px-6 py-4 border-slate-3
 const itemStyle = 'p-2 text-3xl';
 
 const ResultPanel = () => {
-  const { winnerName, winnerScore, runnerUpName, runnerUpScore } = useSync(getResult, undefined);
+  const { winnerName, winnerScore, runnerUpName, runnerUpScore } = useSync(getResult);
   return (
     <div className={panelStyles}>
       <div className={itemStyle}>{`${winnerName}: (${winnerScore})`}</div>
