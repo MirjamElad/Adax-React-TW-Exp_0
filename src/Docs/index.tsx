@@ -1,6 +1,6 @@
 import Parser from 'html-react-parser';
 
-const introText = `The example app allows FANS to vote for either Vue or Angular. 
+const introText = `The example app allows FANS to vote for either Blue or Red. 
 Notice when voting for either the results panel to the right shows the updated score.
 On the left side, Both "FANS" areas show their respective mood with an emoji.
 If it's a tie both moods are neutral 😐. Otherwise, the winning team displays 😃 and the losing one 🤬.
@@ -21,7 +21,7 @@ const state = `Simple data (candidatesList) that fully describes everything nece
 
 const facade = `The app's state/data can only be queried or written-to through functions defined in the facade.`;
 
-const UI = Parser(`On the left: 2 FANS-areas for Vue and Angular respectively. 
+const UI = Parser(`On the left: 2 FANS-areas for Blue and Red respectively. 
 On the right: 1 result-panel view for the score.<br />
 FANS-area needs a query to get the mood (check <b>getMood</b>) and a mutation to increment the vote (check <b>voteFor</b>).
 The result-panel needs a query to get the current score (check <b>getResult</b>).<br />

@@ -38,8 +38,8 @@ const cmpStyle =
 
 const options = [
     { value: 'none', label: 'none' },
-    { value: 'Vue', label: 'Vue' },
-    { value: 'Angular', label: 'Angular' },
+    { value: 'Blue', label: 'Blue' },
+    { value: 'Red', label: 'Red' },
   ];
 export const VoteApp = () => {  
   const [duplicateFanGroup, setDuplicateFanGroup] = React.useState("none");
@@ -50,8 +50,8 @@ export const VoteApp = () => {
     <>
       <div className={cmpStyle}>
         <div>
-          <FansGroup name="Vue" />
-          <FansGroup name="Angular" />
+          <FansGroup name="Blue" />
+          <FansGroup name="Red" />
         </div>
         <ResultPanel />
       </div>
