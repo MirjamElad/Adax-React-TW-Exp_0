@@ -1,4 +1,4 @@
-**A simple app to introduce ADAX**
+**A simple app to introduce ADAX with React**
 
 ![image](https://github.com/user-attachments/assets/e08ba631-5abc-4984-8104-0c11846b0a58)
 
