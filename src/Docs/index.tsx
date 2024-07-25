@@ -31,13 +31,16 @@ The result-panel needs a query to get the current score (check <b>getResult</b>)
 const adaxTouch = Parser(`So far, we've only seen vanilla Typescript for the state/logic part and React for the UI part.
 To make the app interactive, we need the UI to update itself when (and only when) necessary. 
 All query functions used in views need to be re-run for the UI views to update themselves.
-To make this automatic, we wrap the query functions with <b>useSync</b> and wrap the write functions with <b>trigger</b>.
-Finally, we have <b>addRule</b> that specifies what write function should cause what query functions to re-run.
-In addition to the write and the query functions, the addRule accepts a third optional argument <b>skip</b> 
-to programatically condition when query is to be skiped (i.e. we bypass the rule).<br/>
-Exp, we do not always re-run <b>getMood</b> whenever <b>voteFor</b> is triggered, but only when the mood changes. 
-This is programmatically controled with the <b>skip</b> argument in the addRule. I.e: <b>skipMoodChangeAfterVote</b><br />
-<b>NB</b>: For convenience, we placed all query, write & skip functions in  "./src/VoteApp/<b>facade.ts</b>")
+To make this automatic, we wrap the query functions with <b>useSync</b> and wrap the write functions with <b>trigger</b>. <br />
+Have a second look inside the React views (in: <i>&quot;./src/VoteApp/index.tsx&quot;</i>) how queries are wrapped in <b>useSync</b> and writes/actions are wrapped in <b>trigger</b>.<br />
+<div>Optionally, if we want strict control on when queries are re-run and views updated. 
+We can use addRule to specify what write function should cause what query functions to re-run. 
+In addition to the write and the query functions, the addRule accepts a third optional argument skip to programatically condition 
+when query is to be skiped (i.e. we bypass the rule). Exp, we do not always re-run getMood whenever voteFor is triggered, but only when the mood changes. 
+This is programmatically controled with the skip argument in the addRule. I.e: skipMoodChangeAfterVote.
+For convenience, we placed all query, write, rules & skip functions in "./src/VoteApp/facade.ts") <br />
+<b>NB</b>: There are other ways to ensure views are only updated when necessary without involving rules at all. 
+All such options will be expplained in detailed documentation later on!</div>
 `);
 
 export const ImplementationOverview = () => (
@@ -54,7 +57,7 @@ export const ImplementationOverview = () => (
       <b>Facade</b> <i>(Code in: &quot;./src/VoteApp/facade.ts&quot;)</i>: {facade}
     </div>
     <div className="mt-4">
-      <b>UI/views</b> <i>(Code in: &quot;./src/VoteApp/index.ts&quot;)</i>: {UI}
+      <b>UI/views</b> <i>(Code in: &quot;./src/VoteApp/index.tsx&quot;)</i>: {UI}
     </div>
     <div className="mt-2">
       <b>The ADAX's touch</b> <i>(addRule, trigger & useSync)</i>: {adaxTouch}
