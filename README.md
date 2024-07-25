@@ -1,6 +1,11 @@
 **A simple app to introduce ADAX**
 
+![image](https://github.com/user-attachments/assets/e08ba631-5abc-4984-8104-0c11846b0a58)
+
+
 The example app allows FANS to vote for either Blue or Red. Notice when voting for either the results panel to the right shows the updated score. On the left side, Both "FANS" areas show their respective mood with an emoji. If it's a tie both moods are neutral 😐. Otherwise, the winning team displays 😃 and the losing one 🤬. Click/Vote to see the results pannel update immediately. On the other hand, the "FANS" areas only updates if there is a "change of mood".
+
+![image](https://github.com/user-attachments/assets/4354ff37-92cc-40cb-937e-2122761ae4af)
 
 
 **Implementation Overview**_(Code in: "./src/VoteApp")_
