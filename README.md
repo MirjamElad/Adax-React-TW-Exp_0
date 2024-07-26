@@ -1,6 +1,6 @@
 #  ADAX with React, a simple test app:
 
-**NB**: You can play with the app and inspect its code [**HERE**](https://stackblitz.com/~/github.com/MirjamElad/Adax-React-TW-Exp_0)
+**NB**: You can play with the app and inspect its code [**HERE**](https://stackblitz.com/~/github.com/MirjamElad/Adax-React-TW-Exp_0?file=src/VoteApp/index.tsx)
 
 ![image](https://github.com/user-attachments/assets/e08ba631-5abc-4984-8104-0c11846b0a58)
 
@@ -29,4 +29,4 @@ Optionally, if we want strict control on when queries are re-run and views updat
 **NB**: There are other ways to ensure views are only updated when necessary without involving rules at all. All such options will be expplained in detailed documentation later on!
 
 
-**NB**: You can play with the app and inspect its code [**HERE**](https://stackblitz.com/~/github.com/MirjamElad/Adax-React-TW-Exp_0)
+**NB**: You can play with the app and inspect its code [**HERE**](https://stackblitz.com/~/github.com/MirjamElad/Adax-React-TW-Exp_0?file=src/VoteApp/index.tsx)
