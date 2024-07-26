@@ -1,4 +1,4 @@
-#  ADAX with React, a simple test app:
+#  ADAX for React, a simple test app:
 
 **NB**: You can play with the app and inspect its code [**HERE**](https://stackblitz.com/~/github.com/MirjamElad/Adax-React-TW-Exp_0?file=src/VoteApp/index.tsx)
 
