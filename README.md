@@ -1,4 +1,6 @@
-**A simple app to introduce ADAX with React**
+#  ADAX with React, a simple test app:
+
+**NB**: You can play with the app and inspect its code [**HERE**](https://stackblitz.com/~/github.com/MirjamElad/Adax-React-TW-Exp_0)
 
 ![image](https://github.com/user-attachments/assets/e08ba631-5abc-4984-8104-0c11846b0a58)
 
@@ -25,3 +27,6 @@ Have a second look inside the React views (in: _"./src/VoteApp/index.tsx"_) how 
 
 Optionally, if we want strict control on when queries are re-run and views updated. We can use addRule to specify what write function should cause what query functions to re-run. In addition to the write and the query functions, the addRule accepts a third optional argument skip to programatically condition when query is to be skiped (i.e. we bypass the rule). Exp, we do not always re-run getMood whenever voteFor is triggered, but only when the mood changes. This is programmatically controled with the skip argument in the addRule. I.e: skipMoodChangeAfterVote. For convenience, we placed all query, write, rules & skip functions in "./src/VoteApp/facade.ts")  
 **NB**: There are other ways to ensure views are only updated when necessary without involving rules at all. All such options will be expplained in detailed documentation later on!
+
+
+**NB**: You can play with the app and inspect its code [**HERE**](https://stackblitz.com/~/github.com/MirjamElad/Adax-React-TW-Exp_0)
