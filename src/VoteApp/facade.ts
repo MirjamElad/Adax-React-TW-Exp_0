@@ -1,5 +1,5 @@
 import { candidatesList } from './state';
-import { addRule } from 'adax';
+import { addRule } from 'adax-react';
 
 export const voteFor = ({ name }: { name: string }, stores = { candidatesList }) => {
   const candidate = stores.candidatesList.find((c) => c.name === name);

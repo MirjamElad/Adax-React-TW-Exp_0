@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { trigger } from 'adax';
-import { useSync } from 'adax-react';
+import { trigger, useSync } from 'adax-react';
 import FanGroupPicker from './fanGroupPicker';
 import { getMood, voteFor, getResult } from './facade';
 
